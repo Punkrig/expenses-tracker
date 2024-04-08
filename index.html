@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova- Tema 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="desp-app">
+            <h1>Gerenciamento de Finanças pessoais</h1>
+            <div class="row">
+                <label for="n-receita">Insira o nome da transação:</label>
+                <input type="text" id="nome">
+                <label for="v-receita">Insira o valor da transação:</label>
+                <input type="number" id="valor">
+                <label for="tipo">Tipo de transação:</label>
+                <select id="tipo" name="tipo">
+                    <option value=""></option>
+                    <option value="despesa">Despesa</option>
+                    <option value="receita">Receita</option>
+                </select>
+                <button onclick="calcular()">Adicionar valor</button>
+            </div>
+           <div class="quadro">
+                <h2 class="titulo-quadro">Lista de Despesas:</h2>
+                <table id="t-despesas">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="l-despesas"></tbody>
+                </table>
+            </div>
+            <div class="quadro">
+                <h2 class="titulo-quadro">Lista de Receitas:</h2>
+                <table id="t-receitas">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="l-receitas"></tbody>
+                </table>
+            </div>
+            <h2 id="diferenca"></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

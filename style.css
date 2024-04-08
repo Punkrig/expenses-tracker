@@ -1,0 +1,83 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.desp-app {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 8px; 
+    font-size: 16px; 
+    width: 70%; 
+    margin-bottom: 10px; 
+}
+
+
+
+button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; 
+}
+
+button:hover {
+    background-color: #031f3d;
+}
+
+#diferenca {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quadro {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.quadro h2 {
+    text-align: left;
+    margin-bottom: 10px; 
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    width: 150px; 
+}
+td {
+    width: 100px; 
+}
